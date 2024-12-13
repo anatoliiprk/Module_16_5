@@ -4,7 +4,8 @@
         <article class="card container fluid"></article>
         <br>
         <p>ID: {{user.id}} <br>Имя: {{user.username}} <br>Возраст: {{user.age}}</p>
-    {% else %}
+    {% endif %}
+    {% if not user %}
             <section class="container-fluid">
                 <h2 align="center"> Users </h2>
                 <br>
